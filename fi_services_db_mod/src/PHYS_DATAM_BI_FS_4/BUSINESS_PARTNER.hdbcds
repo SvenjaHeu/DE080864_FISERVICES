@@ -1,0 +1,17 @@
+using BUSINESS_PARTNER_RATING;
+
+entity "BUSINESS_PARTNER" {
+    key "BUSINESS_PARTNER1" : String(10) not null;
+        "RATING_GROUP1"     : String(2);
+        "INSTITUTE"         : String(35);
+        "NAME1"             : String(35);
+        "SURNAME1"          : String(35);
+        "CUSTOMER_ID3"      : String(10);
+        "TRADE_ID"          : String(20);
+        "CATEGORY"          : String(35);
+        association_1       : association[0..1] to BUSINESS_PARTNER_RATING on "RATING_GROUP1" = association_1.RATING_GROUP;
+}
+technical configuration {
+    column store;
+};
+

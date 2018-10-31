@@ -1,0 +1,23 @@
+ID: DE080864_FISERVICES
+_schema-version: '2.0'
+version: 0.0.1
+resources:
+  - name: fi_services
+    type: com.sap.xs.hdi-container
+    parameters:
+      config: ComplexType
+    properties:
+      hdi-container-name: '${service-name}'
+
+
+  - name: hdi_fi_services_db_mod
+    properties:
+       hdi-container-name_2: ${service-name}
+    type: com.sap.xs.hdi-container
+
+modules:
+ - name: fi_services_db_mod
+   type: hdb
+   path: fi_services_db_mod
+   requires:
+    - name: hdi_fi_services_db_mod

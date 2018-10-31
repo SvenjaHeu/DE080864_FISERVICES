@@ -1,0 +1,9 @@
+entity "CUSTOMER_RATING" {
+    key "CUSTOMER_ID1"         : String(10) not null;
+    key "DATE_FROM"            : LocalDate  not null;
+        "DATE_TO"              : LocalDate;
+        "FAILURE_PROBABILITY1" : Integer;
+}
+technical configuration {
+    column store;
+};

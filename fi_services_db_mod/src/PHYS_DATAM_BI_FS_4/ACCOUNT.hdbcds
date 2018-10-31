@@ -1,0 +1,10 @@
+entity "ACCOUNT" {
+    key "PRODUCT_ID1"      : String(30) not null;
+        "DRAWING_LIMIT"    : Integer;
+        "VERIFICATION_NR_" : String(4);
+    key "VALID_TO"         : LocalDate  not null;
+        "PRODUCT_TYPE"     : String(41);
+}
+technical configuration {
+    column store;
+};

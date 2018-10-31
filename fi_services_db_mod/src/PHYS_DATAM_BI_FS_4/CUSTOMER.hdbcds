@@ -1,0 +1,27 @@
+using CUSTOMER_RATING;
+
+entity "CUSTOMER" {
+    key "CUSTOMER_ID"         : String(10) not null;
+        "NAME"                : String(35);
+        "SURNAME"             : String(35);
+        "TITLE"               : String(3);
+        "ADDRESS"             : String(35);
+        "POSTAL_CODE"         : String(10);
+        "CITY"                : String(35);
+        "COUNTRY"             : String(3);
+        "MAIL"                : String(35);
+        "DATE_OF_BIRTH"       : LocalDate;
+        "CIVIL_STATUS"        : Integer;
+        "NATIONALITY"         : String(3);
+        "EMPLOYMENT_CONTRACT" : String(1);
+        "DEGREE"              : String(1);
+        "JOB"                 : String(5);
+        "ACCOMMODATION"       : String(1);
+        "EMPLOYER"            : String(10);
+        "INDUSTRY"            : String(3);
+        "PHONE__PRIVAT_"      : String(16);
+        association_1         : association[0..1] to CUSTOMER_RATING on "CUSTOMER_ID" = association_1.CUSTOMER_ID1;
+}
+technical configuration {
+    column store;
+};

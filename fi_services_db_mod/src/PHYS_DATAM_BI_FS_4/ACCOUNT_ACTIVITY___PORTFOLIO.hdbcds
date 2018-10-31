@@ -1,0 +1,22 @@
+using CUSTOMER;
+using ACCOUNT;
+using BUSINESS_PARTNER;
+
+entity "ACCOUNT_ACTIVITY___PORTFOLIO" {
+   key "TRANSACTION_DATE"      : LocalDate not null;
+   key "INVOICE"               : String(10) not null;
+   key "CUSTOMER_ID2"          : String(10) not null;
+   "PRODUCT_ID"                : String(30);
+   "AMOUNT"                    : Integer;
+   "S_H"                       : String(1);
+   "CURRENCY"                  : String(3);
+   "BUSINESS_PARTNER"          : String(10);
+   "TRANSACTION_TYPE"          : String(4);
+   "BUSINESS_TRANSACTION_TYPE" : String(4);
+   "CUSTOMER_1"                : association to "CUSTOMER";
+   "ACCOUNT"                   : association to "ACCOUNT";
+   "BUSINESS_PARTNER_1"        : association to "BUSINESS_PARTNER";
+}
+technical configuration {
+   column store;
+};

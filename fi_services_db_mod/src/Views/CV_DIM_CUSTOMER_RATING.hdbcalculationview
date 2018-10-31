@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_DIM_CUSTOMER_RATING" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_DIM_CUSTOMER_RATING"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="CUSTOMER">
+    <resourceUri>CUSTOMER</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="CUSTOMER">
+  <attributes>
+    <attribute id="CUSTOMER_ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CUSTOMER_ID"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="CUSTOMER_ID"/>
+    </attribute>
+    <attribute id="NAME" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAME"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="NAME"/>
+    </attribute>
+    <attribute id="SURNAME" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SURNAME"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="SURNAME"/>
+    </attribute>
+    <attribute id="TITLE" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TITLE"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="TITLE"/>
+    </attribute>
+    <attribute id="ADDRESS" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ADDRESS"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="ADDRESS"/>
+    </attribute>
+    <attribute id="POSTAL_CODE" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="POSTAL_CODE"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="POSTAL_CODE"/>
+    </attribute>
+    <attribute id="CITY" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CITY"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="CITY"/>
+    </attribute>
+    <attribute id="COUNTRY" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="COUNTRY"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="COUNTRY"/>
+    </attribute>
+    <attribute id="MAIL" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAIL"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="MAIL"/>
+    </attribute>
+    <attribute id="DATE_OF_BIRTH" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATE_OF_BIRTH"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="DATE_OF_BIRTH"/>
+    </attribute>
+    <attribute id="CIVIL_STATUS" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CIVIL_STATUS"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="CIVIL_STATUS"/>
+    </attribute>
+    <attribute id="NATIONALITY" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NATIONALITY"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="NATIONALITY"/>
+    </attribute>
+    <attribute id="EMPLOYMENT_CONTRACT" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EMPLOYMENT_CONTRACT"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="EMPLOYMENT_CONTRACT"/>
+    </attribute>
+    <attribute id="DEGREE" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DEGREE"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="DEGREE"/>
+    </attribute>
+    <attribute id="JOB" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="JOB"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="JOB"/>
+    </attribute>
+    <attribute id="ACCOMMODATION" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACCOMMODATION"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="ACCOMMODATION"/>
+    </attribute>
+    <attribute id="EMPLOYER" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EMPLOYER"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="EMPLOYER"/>
+    </attribute>
+    <attribute id="INDUSTRY" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INDUSTRY"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="INDUSTRY"/>
+    </attribute>
+    <attribute id="PHONE__PRIVAT_" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PHONE__PRIVAT_"/>
+      <keyMapping columnObjectName="CUSTOMER" columnName="PHONE__PRIVAT_"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

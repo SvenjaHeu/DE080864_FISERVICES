@@ -1,0 +1,9 @@
+entity "BUSINESS_PARTNER_RATING" {
+    key "RATING_GROUP"        : String(2) not null;
+        "FAILURE_PROBABILITY" : Decimal(10, 2);
+        "MAPPING_LOW"         : Decimal(10, 2);
+        "MAPPING_HIGH"        : Decimal(10, 2);
+}
+technical configuration {
+    column store;
+};
